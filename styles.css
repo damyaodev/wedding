@@ -137,7 +137,7 @@ body {
 .section {
   min-height: 100vh;
   min-height: 100dvh;
-  padding: 30px 20px 40px;
+  padding: 20x 20px 35px;
   display: flex;
   justify-content: center;
   align-items: center;
