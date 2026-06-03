@@ -137,7 +137,7 @@ body {
 .section {
   min-height: 100vh;
   min-height: 100dvh;
-  padding: 20x 20px 35px;
+  padding: 30px 20px 3px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -700,7 +700,7 @@ main {
 
 /* Описание */
 .timeline-event__desc {
-  font-size: 14px;
+  font-size: clamp(15px, 3.8vw, 17px);
   line-height: 1.6;
   color: var(--text-color);
   opacity: 0.82;
@@ -840,7 +840,7 @@ main {
 
 .dresscode__note-title {
   display: block;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -853,13 +853,13 @@ main {
 }
 
 .dresscode__note p {
-  font-size: 14px;
+  font-size: clamp(15px, 3.8vw, 17px);
   line-height: 1.6;
   opacity: 0.88;
 }
 
 .dresscode__refs-intro {
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 0.02em;
   opacity: 0.6;
 }
@@ -1139,7 +1139,7 @@ main {
   }
 
   .dresscode__intro {
-    font-size: 15px;
+    font-size: clamp(15px, 3.8vw, 17px);
     max-width: none;
   }
 
@@ -1161,13 +1161,13 @@ main {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 11px;
+  font-size: 24px;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--oliv-color);
   opacity: 0.7;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .wishes-section-label::after {
@@ -1224,14 +1224,14 @@ main {
 }
 
 .wishes-card__title {
-  font-size: 15px;
+  font-size: clamp(15px, 3.8vw, 17px);
   font-weight: 500;
   color: var(--oliv-color);
   margin: 0 0 8px;
 }
 
 .wishes-card__body {
-  font-size: 14px;
+  font-size: clamp(15px, 3.8vw, 17px);
   line-height: 1.75;
   margin: 0;
   opacity: 0.8;
@@ -1274,7 +1274,7 @@ main {
 }
 
 .wishes-tag {
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.04em;
   padding: 3px 10px;
   border-radius: 999px;
@@ -1295,7 +1295,7 @@ main {
 }
 
 .wishes-tg-block i {
-  font-size: 20px;
+  font-size: 24px;
   color: var(--oliv-color);
   opacity: 0.7;
   flex-shrink: 0;
@@ -1303,7 +1303,7 @@ main {
 }
 
 .wishes-tg-block p {
-  font-size: 14px;
+  font-size: clamp(15px, 3.8vw, 17px);
   line-height: 1.7;
   margin: 0;
   opacity: 0.8;
@@ -1366,7 +1366,7 @@ main {
 }
 
 .wishes-contact__role {
-  font-size: 12px;
+  font-size: 15px;
   opacity: 0.55;
   margin-top: 1px;
   line-height: 1.4;
@@ -1379,6 +1379,24 @@ main {
   text-decoration: none;
   color: inherit;
   font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+}
+
+.wishes-contact__tg {
+  font-size: 13px;
+  opacity: 0.65;
+  white-space: nowrap;
+  text-decoration: none;
+  color: inherit;
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+}
+
+.wishes-contact__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
   flex-shrink: 0;
 }
 
