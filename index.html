@@ -9,6 +9,21 @@
 </head>
 
 <body>
+    <div class="loader" id="loader" aria-hidden="true">
+        <div class="loader__inner">
+            <div class="loader__heart"></div>
+            <p class="loader__names">
+                <span class="loader__name loader__name--m"><span class="loader__first-letter">М</span>аша</span>
+                <span class="loader__amp">&</span>
+                <span class="loader__name loader__name--d"><span
+                        class="loader__first-letter loader__first-letter--d">Д</span>аня</span>
+            </p>
+            <p class="loader__date">31 июля 2026</p>
+            <div class="loader__dots">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
     <div class="hearts-bg"></div>
     <main>
         <section class="section section--hero" id="top">
@@ -295,7 +310,6 @@
                     <div class="dresscode__galleries">
                         <div class="dresscode__gallery">
                             <div class="dresscode__gallery-head">
-                                <h3 class="dresscode__gallery-title">Женщинам</h3>
                                 <p class="dresscode__swipe-hint" aria-hidden="true">
                                     <span class="dresscode__swipe-icon">←</span>
                                     листайте влево
@@ -360,7 +374,6 @@
 
                         <div class="dresscode__gallery">
                             <div class="dresscode__gallery-head">
-                                <h3 class="dresscode__gallery-title">Мужчинам</h3>
                                 <p class="dresscode__swipe-hint" aria-hidden="true">
                                     <span class="dresscode__swipe-icon">←</span>
                                     листайте влево
@@ -432,31 +445,121 @@
             </div>
         </section>
 
-        <section class="section section--form" id="form">
-            <div class="section__inner">
-                <h2 class="section__title">Анкета</h2>
-                <div class="info-card info-card--text">
-                    <p class="dresscode__intro">
-                        Заполните, пожалуйста, форму до
-                        (12.06.2026), чтобы подтвердить своё присутствие
-                    </p>
-                    <a href="https://forms.gle/bX6Zcr96iNCeWt5JA">жмяк</a>
-                </div>
-            </div>
-        </section>
-
         <section class="section section--wishes" id="wishes">
             <div class="section__inner">
-                <h2 class="section__title">Пожелания</h2>
-                <div class="info-card info-card--text">
-                    <p class="dresscode__intro">
-                        Если ваш подарок не помещается в конверт — скорее всего, он слишком большой. Будем благодарны за
-                        вклад в бюджет нашей молодой семьи!
-                    </p>
+
+                <div class="wishes-section-label">
+                    <i class="ti ti-gift" aria-hidden="true"></i>
+                    Пожелания
                 </div>
+
+                <div class="wishes-cards-grid">
+                    <div class="wishes-card">
+                        <i class="ti ti-cash wishes-card__icon" aria-hidden="true"></i>
+                        <p class="wishes-card__title">Подарок в конверте</p>
+                        <p class="wishes-card__body">Если подарок не помещается в конверт — скорее всего, он слишком
+                            большой. Будем благодарны за вклад в бюджет нашей молодой семьи!</p>
+                    </div>
+                    <div class="wishes-card">
+                        <i class="ti ti-paw wishes-card__icon" aria-hidden="true"></i>
+                        <p class="wishes-card__title">Вместо цветов</p>
+                        <p class="wishes-card__body">Цветы так быстро вянут. Лучший подарок — сертификат в зоомагазин на
+                            комфортную для вас сумму. Мы закупим корм и отвезём его в приют.</p>
+                        <div class="wishes-charity-block">
+                            <i class="ti ti-heart" aria-hidden="true"></i>
+                            <p>Оформить сертификат можно на:<br>
+                                <strong>mariashpagina@mail.ru</strong><br>
+                                <strong>+7 977 556-99-45</strong>
+                            </p>
+                        </div>
+                        <div class="wishes-tags">
+                            <span class="wishes-tag">Зоозавр</span>
+                            <span class="wishes-tag">Четыре Лапы</span>
+                            <span class="wishes-tag">Ozon</span>
+                            <span class="wishes-tag">Wildberries</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wishes-section-label wishes-section-label--spaced">
+                    <i class="ti ti-info-circle" aria-hidden="true"></i>
+                    Важная информация
+                </div>
+
+                <div class="wishes-card wishes-card--full">
+                    <div class="wishes-tg-block">
+                        <i class="ti ti-brand-telegram" aria-hidden="true"></i>
+                        <p>За неделю до свадьбы мы добавим вас в <strong>Telegram-чат</strong> — там будет вся
+                            актуальная информация, а после праздника можно поделиться фото и видео.</p>
+                    </div>
+
+                    <p class="wishes-contacts-heading">Контакты</p>
+
+                    <div class="wishes-contact">
+                        <div class="wishes-contact__avatar wishes-contact__avatar--purple">АЛ</div>
+                        <div class="wishes-contact__info">
+                            <div class="wishes-contact__name">Александр</div>
+                            <div class="wishes-contact__role">Ведущий — творческие идеи, сюрпризы, поздравления</div>
+                        </div>
+                        <a class="wishes-contact__phone" href="tel:+79166317366">+7 916 631-73-66</a>
+                    </div>
+
+                    <div class="wishes-contact wishes-contact--last">
+                        <div class="wishes-contact__avatar wishes-contact__avatar--teal">АН</div>
+                        <div class="wishes-contact__info">
+                            <div class="wishes-contact__name">Ангелина</div>
+                            <div class="wishes-contact__role">Координатор — любые вопросы в день свадьбы</div>
+                        </div>
+                        <a class="wishes-contact__phone" href="tel:+79169330414">+7 916 933-04-14</a>
+                    </div>
+                </div>
+
+                <div class="wishes-section-label wishes-section-label--spaced">
+                    <i class="ti ti-checkbox" aria-hidden="true"></i>
+                    Подтверждение участия
+                </div>
+
+                <div class="wishes-card wishes-card--full wishes-rsvp">
+                    <div class="wishes-rsvp__inner">
+                        <div class="wishes-rsvp__text">
+                            <p class="wishes-card__title">Заполните анкету</p>
+                            <p class="wishes-card__body">Пожалуйста, подтвердите своё присутствие до <strong>12 июня
+                                    2026</strong>&thinsp;— нам важно знать, что вы будете рядом.</p>
+                        </div>
+                        <a class="wishes-rsvp__btn" href="https://forms.gle/bX6Zcr96iNCeWt5JA" target="_blank"
+                            rel="noopener">
+                            Заполнить анкету
+                            <i class="ti ti-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
+
+    <script>
+        const loader = document.getElementById('loader');
+        const video = document.querySelector('video');
+        let resolved = false;
+
+        function hideLoader() {
+            if (resolved) return;
+            resolved = true;
+            loader.classList.add('loader--hidden');
+            setTimeout(() => loader.remove(), 600);
+        }
+
+        window.addEventListener('load', hideLoader);
+        setTimeout(hideLoader, 5000);
+
+  
+        if (video) {
+            video.addEventListener('canplay', () => {
+                setTimeout(hideLoader, 300);
+            });
+        }
+    </script>
 </body>
 
 </html>
