@@ -4,7 +4,7 @@
   --bg-color: #F4EEE6;
   --oliv-color: #A0BA00;
   --pink--color: #FFABAC;
-  --font-text:
+  --font-body: clamp(15px, 3.8vw, 17px);
 }
 
 @font-face {
@@ -280,7 +280,7 @@ main {
 }
 
 .hero__copy p {
-  font-size: clamp(15px, 3.8vw, 17px);
+  font-size: var(--font-body);
   line-height: 1.65;
   color: var(--text-color);
   opacity: 0.9;
@@ -1001,7 +1001,6 @@ main {
   font-size: 14px;
   line-height: 1.65;
   text-align: center;
-  opacity: 0.8;
   margin: 0;
   color: var(--oliv-color)
 }
@@ -1282,6 +1281,15 @@ main {
   opacity: 0.65;
 }
 
+.wishes-tag-footer {
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  padding: 3px 10px;
+  color: var(--oliv-color);
+  opacity: 0.65;
+}
+
+
 /* ─── Telegram block ─────────────────────────────────────── */
 
 .wishes-tg-block {
@@ -1382,15 +1390,6 @@ main {
   flex-shrink: 0;
 }
 
-.wishes-contact__tg {
-  font-size: 13px;
-  opacity: 0.65;
-  white-space: nowrap;
-  text-decoration: none;
-  color: inherit;
-  font-variant-numeric: tabular-nums;
-  flex-shrink: 0;
-}
 
 .wishes-contact__contacts {
   display: flex;
