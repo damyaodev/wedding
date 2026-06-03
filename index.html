@@ -576,9 +576,21 @@
 
             tryPlay();
 
-            // Safari иногда не готов сразу — повторяем при первом касании
             document.addEventListener('touchstart', tryPlay, { once: true });
         });
+        document.querySelectorAll('.dresscode__carousel').forEach(carousel => {
+            carousel.addEventListener('wheel', (e) => {
+                
+                if (carousel.scrollWidth > carousel.clientWidth) {
+                    e.preventDefault();
+
+                    carousel.scrollBy({
+                        left: e.deltaY,
+                        behavior: 'smooth'
+                    });
+                }
+            }, { passive: false });
+        }); 
     </script>
 </body>
 

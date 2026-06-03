@@ -4,7 +4,7 @@
   --bg-color: #F4EEE6;
   --oliv-color: #A0BA00;
   --pink--color: #FFABAC;
-  --font-text: 
+  --font-text:
 }
 
 @font-face {
@@ -78,7 +78,7 @@ body {
   background-image: url('res/cake.svg');
 }
 
-#dinner{
+#dinner {
   background-image: url('res/dinner.svg');
 }
 
@@ -92,7 +92,7 @@ body {
   pointer-events: none;
 
   background-image:
-  url("./res/hearts-1.png"),
+    url("./res/hearts-1.png"),
     url("./res/hearts-2.png"),
     url("./res/hearts-3.png"),
     url("./res/hearts-4.png"),
@@ -112,7 +112,7 @@ body {
     55px,
     35px; */
 
-    background-size:
+  background-size:
     25px,
     40px,
     20px,
@@ -424,10 +424,9 @@ main {
 
   font-weight: 600;
   color: #ffffff;
-  
+
   background:
-  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 29.6'%3E%3Cpath fill='%23FFABAC' d='M23.6,0c-3.4,0-6.4,2-7.6,5.1C14.8,2,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4 c0,9.1,16,21.2,16,21.2s16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z'/%3E%3C/svg%3E")
-  center/contain no-repeat;
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 29.6'%3E%3Cpath fill='%23FFABAC' d='M23.6,0c-3.4,0-6.4,2-7.6,5.1C14.8,2,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4 c0,9.1,16,21.2,16,21.2s16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z'/%3E%3C/svg%3E") center/contain no-repeat;
 }
 
 .calendar__note {
@@ -500,13 +499,11 @@ main {
   top: 48px;
   bottom: 48px;
   width: 1px;
-  background: linear-gradient(
-    180deg,
-    transparent 0%,
-    rgba(99, 107, 47, 0.35) 12%,
-    rgba(99, 107, 47, 0.35) 88%,
-    transparent 100%
-  );
+  background: linear-gradient(180deg,
+      transparent 0%,
+      rgba(99, 107, 47, 0.35) 12%,
+      rgba(99, 107, 47, 0.35) 88%,
+      transparent 100%);
   pointer-events: none;
 }
 
@@ -631,7 +628,8 @@ main {
 
 .section__inner--timing {
   max-width: 680px;
-  margin: 0 auto; /* Центрируем саму секцию, если не сделано выше */
+  margin: 0 auto;
+  /* Центрируем саму секцию, если не сделано выше */
 }
 
 .timeline-poster-card {
@@ -660,8 +658,10 @@ main {
   align-items: center;
   text-align: center;
   width: 100%;
-  max-width: 320px; /* Ограничиваем ширину текста, чтобы читалoсь аккуратно */
-  margin-bottom: clamp(25px, 12vw, 40px); /* Отступ увеличен, чтобы поместилась стрелочка */
+  max-width: 320px;
+  /* Ограничиваем ширину текста, чтобы читалoсь аккуратно */
+  margin-bottom: clamp(25px, 12vw, 40px);
+  /* Отступ увеличен, чтобы поместилась стрелочка */
 }
 
 /* Убираем отступ у последнего элемента */
@@ -897,6 +897,7 @@ main {
 }
 
 @keyframes dresscode-swipe {
+
   0%,
   100% {
     transform: translateX(0);
@@ -1017,12 +1018,12 @@ main {
   }
 
   .section__lead {
-  font-size: 15px;
-  letter-spacing: 0.06em;
-  opacity: 0.9;
-  text-align: center;
-  margin-bottom: 32px;
-}
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    opacity: 0.9;
+    text-align: center;
+    margin-bottom: 32px;
+  }
 
 
   .section--hero {
@@ -1154,7 +1155,7 @@ main {
 }
 
 /* ─── Wishes section ─────────────────────────────────────── */
- 
+
 .wishes-section-label {
   width: 100%;
   display: flex;
@@ -1168,39 +1169,39 @@ main {
   opacity: 0.7;
   margin-bottom: 16px;
 }
- 
+
 .wishes-section-label::after {
   content: '';
   flex: 1;
   height: 1px;
   background: rgba(29, 29, 29, 0.1);
 }
- 
+
 .wishes-section-label i {
   font-size: 14px;
 }
- 
+
 .wishes-section-label--spaced {
   margin-top: 40px;
 }
- 
+
 /* ─── Grid ───────────────────────────────────────────────── */
- 
+
 .wishes-cards-grid {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
- 
+
 @media (max-width: 540px) {
   .wishes-cards-grid {
     grid-template-columns: 1fr;
   }
 }
- 
+
 /* ─── Card ───────────────────────────────────────────────── */
- 
+
 .wishes-card {
   padding: 24px 20px;
   background: rgba(255, 255, 255, 0.45);
@@ -1208,12 +1209,12 @@ main {
   border-radius: 16px;
   box-shadow: 0 12px 40px rgba(29, 29, 29, 0.06);
 }
- 
+
 .wishes-card--full {
   width: 100%;
   box-sizing: border-box;
 }
- 
+
 .wishes-card__icon {
   font-size: 22px;
   color: var(--oliv-color);
@@ -1221,23 +1222,23 @@ main {
   display: block;
   margin-bottom: 12px;
 }
- 
+
 .wishes-card__title {
   font-size: 15px;
   font-weight: 500;
   color: var(--oliv-color);
   margin: 0 0 8px;
 }
- 
+
 .wishes-card__body {
   font-size: 14px;
   line-height: 1.75;
   margin: 0;
   opacity: 0.8;
 }
- 
+
 /* ─── Charity block ──────────────────────────────────────── */
- 
+
 .wishes-charity-block {
   display: flex;
   align-items: flex-start;
@@ -1247,7 +1248,7 @@ main {
   background: rgba(29, 29, 29, 0.04);
   border-radius: 10px;
 }
- 
+
 .wishes-charity-block i {
   font-size: 18px;
   color: var(--oliv-color);
@@ -1255,23 +1256,23 @@ main {
   margin-top: 2px;
   flex-shrink: 0;
 }
- 
+
 .wishes-charity-block p {
   font-size: 13px;
   line-height: 1.65;
   margin: 0;
   opacity: 0.8;
 }
- 
+
 /* ─── Tags ───────────────────────────────────────────────── */
- 
+
 .wishes-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
   margin-top: 12px;
 }
- 
+
 .wishes-tag {
   font-size: 11px;
   letter-spacing: 0.04em;
@@ -1280,9 +1281,9 @@ main {
   border: 1px solid rgba(29, 29, 29, 0.15);
   opacity: 0.65;
 }
- 
+
 /* ─── Telegram block ─────────────────────────────────────── */
- 
+
 .wishes-tg-block {
   display: flex;
   align-items: flex-start;
@@ -1292,7 +1293,7 @@ main {
   border-radius: 10px;
   margin-bottom: 20px;
 }
- 
+
 .wishes-tg-block i {
   font-size: 20px;
   color: var(--oliv-color);
@@ -1300,16 +1301,16 @@ main {
   flex-shrink: 0;
   margin-top: 1px;
 }
- 
+
 .wishes-tg-block p {
   font-size: 14px;
   line-height: 1.7;
   margin: 0;
   opacity: 0.8;
 }
- 
+
 /* ─── Contacts ───────────────────────────────────────────── */
- 
+
 .wishes-contacts-heading {
   font-size: 11px;
   font-weight: 500;
@@ -1318,7 +1319,7 @@ main {
   opacity: 0.45;
   margin: 0 0 4px;
 }
- 
+
 .wishes-contact {
   display: flex;
   align-items: center;
@@ -1326,12 +1327,12 @@ main {
   padding: 12px 0;
   border-bottom: 1px solid rgba(29, 29, 29, 0.08);
 }
- 
+
 .wishes-contact--last {
   border-bottom: none;
   padding-bottom: 0;
 }
- 
+
 .wishes-contact__avatar {
   width: 36px;
   height: 36px;
@@ -1343,34 +1344,34 @@ main {
   font-weight: 500;
   flex-shrink: 0;
 }
- 
+
 .wishes-contact__avatar--purple {
   background: rgba(99, 78, 183, 0.12);
   color: #534AB7;
 }
- 
+
 .wishes-contact__avatar--teal {
   background: rgba(15, 110, 86, 0.12);
   color: #0F6E56;
 }
- 
+
 .wishes-contact__info {
   flex: 1;
   min-width: 0;
 }
- 
+
 .wishes-contact__name {
   font-size: 14px;
   font-weight: 500;
 }
- 
+
 .wishes-contact__role {
   font-size: 12px;
   opacity: 0.55;
   margin-top: 1px;
   line-height: 1.4;
 }
- 
+
 .wishes-contact__phone {
   font-size: 13px;
   opacity: 0.65;
@@ -1380,27 +1381,27 @@ main {
   font-variant-numeric: tabular-nums;
   flex-shrink: 0;
 }
- 
+
 .wishes-contact__phone:hover {
   opacity: 1;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
- 
+
 /* ─── RSVP block ─────────────────────────────────────────── */
- 
+
 .wishes-rsvp__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
- 
+
 .wishes-rsvp__text {
   flex: 1;
   min-width: 0;
 }
- 
+
 .wishes-rsvp__btn {
   display: inline-flex;
   align-items: center;
@@ -1417,31 +1418,32 @@ main {
   flex-shrink: 0;
   transition: opacity 0.2s ease, transform 0.15s ease;
 }
- 
+
 .wishes-rsvp__btn i {
   font-size: 16px;
   transition: transform 0.2s ease;
 }
- 
+
 .wishes-rsvp__btn:hover {
   opacity: 0.88;
   transform: translateY(-1px);
 }
- 
+
 .wishes-rsvp__btn:hover i {
   transform: translateX(3px);
 }
- 
+
 .wishes-rsvp__btn:active {
   transform: translateY(0);
   opacity: 1;
 }
- 
+
 @media (max-width: 480px) {
   .wishes-rsvp__inner {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .wishes-rsvp__btn {
     width: 100%;
     justify-content: center;
@@ -1486,8 +1488,15 @@ main {
 }
 
 @keyframes loader-pulse {
-  0%, 100% { transform: scale(1); }
-  50%       { transform: scale(1.18); }
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.18);
+  }
 }
 
 .loader__names {
@@ -1538,15 +1547,36 @@ main {
   animation: loader-dot 1.2s ease-in-out infinite;
 }
 
-.loader__dots span:nth-child(2) { animation-delay: 0.2s; }
-.loader__dots span:nth-child(3) { animation-delay: 0.4s; }
+.loader__dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader__dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
 
 @keyframes loader-dot {
-  0%, 80%, 100% { transform: scale(0.7); opacity: 0.35; }
-  40%           { transform: scale(1);   opacity: 1; }
+
+  0%,
+  80%,
+  100% {
+    transform: scale(0.7);
+    opacity: 0.35;
+  }
+
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .loader__heart { animation: none; }
-  .loader__dots span { animation: none; opacity: 0.5; }
+  .loader__heart {
+    animation: none;
+  }
+
+  .loader__dots span {
+    animation: none;
+    opacity: 0.5;
+  }
 }
