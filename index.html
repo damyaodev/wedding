@@ -499,7 +499,8 @@
                         <div class="wishes-contact__avatar wishes-contact__avatar--purple">АЛ</div>
                         <div class="wishes-contact__info">
                             <div class="wishes-contact__name">Александр</div>
-                            <div class="wishes-contact__role">Ведущий — творческие идеи, сюрпризы, поздравления</div>
+                            <div class="wishes-contact__role">Ведущий — если у вас возникнут идеи для поздравления или
+                                вы подготовили творческий сюрприз</div>
                         </div>
                         <a class="wishes-contact__phone" href="tel:+79166317366">+7 916 631-73-66</a>
                     </div>
@@ -508,7 +509,9 @@
                         <div class="wishes-contact__avatar wishes-contact__avatar--teal">АН</div>
                         <div class="wishes-contact__info">
                             <div class="wishes-contact__name">Ангелина</div>
-                            <div class="wishes-contact__role">Координатор — любые вопросы в день свадьбы</div>
+                            <div class="wishes-contact__role">Координатор — мы очень хотим, чтобы все остались довольны.
+                                Поэтому в день свадьбы по любым вопросам вы можете обращаться к нашему координатору
+                            </div>
                         </div>
                         <a class="wishes-contact__phone" href="tel:+79169330414">+7 916 933-04-14</a>
                     </div>
@@ -553,12 +556,29 @@
         window.addEventListener('load', hideLoader);
         setTimeout(hideLoader, 5000);
 
-  
+
         if (video) {
             video.addEventListener('canplay', () => {
                 setTimeout(hideLoader, 300);
             });
         }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const video = document.querySelector('.hero__video video');
+            if (!video) return;
+
+            video.muted = true;
+            video.playsInline = true;
+
+            const tryPlay = () => {
+                video.play().catch(() => { });
+            };
+
+            tryPlay();
+
+            // Safari иногда не готов сразу — повторяем при первом касании
+            document.addEventListener('touchstart', tryPlay, { once: true });
+        });
     </script>
 </body>
 
